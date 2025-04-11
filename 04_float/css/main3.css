@@ -1,0 +1,9 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun gothic", sans-serif; background: #ccc;}
+*{margin: 0; padding: 0;}
+.wrap{width: 464px; margin: auto; background: #ffffff; padding: 5px; border-radius: 16px; margin-top: 100px;}
+.boxa{width: 444px; height: 180px; text-align: center; font-size: 21px; color: #757c84; font-weight: 900; line-height: 180px; background: #ffdfdf; margin: 10px; border-radius: 12px;}
+.boxb{width: 476px; height: 268px;}
+.boxb .box1{width: 130px; height: 268px; background-color: #ffe1c3; color: #757c84; border-radius: 12px; float: left; margin: 0 5px 0 10px; text-align: center; font-size: 21px; color: #757c84; font-weight: 900; line-height: 268px;}
+.boxb .box2{width: 302px; height: 268px; background-color: #d9f8ff; color: #757c84; border-radius: 12px; float: left; margin: 0 10px 0 5px; text-align: center; font-size: 21px; color: #757c84; font-weight: 900; line-height: 268px;}
+.boxc{width: 444px; height: 60px; background: #e1f7de; color: #757c84; margin: 10px; border-radius: 12px; text-align: center; font-size: 21px; color: #757c84; font-weight: 900; line-height: 60px;}
