@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{height: 3000px;}
+*{margin: 0; padding: 0;}
+/* 배경이미지로 삽입 */
+div{
+    /* 삽입할 영역에 꼭 사이즈를 넣어야 배경이미지 삽입 가능 */
+    width: 1000px; height: 600px;
+    margin: auto; background: gold;
+    /* 해당요소에 배경이미지로 반복삽입하는 명령 */
+    /* 상위폴더로 가는 명령 > 앞에 . 추가 */
+    /* background-image: url("../images/icon.png"); */
+    /* 해당요소에 배경이미지 가로(X)로 반복삽입하는 명령 */
+    /* background-repeat: repeat-x; */
+    /* 해당요소에 배경이미지 세로(y)로 반복삽입하는 명령 */
+    /* background-repeat: repeat-y; */
+    /* 해당요소에 배경이미지 한번만 삽입하는 명령 */
+    /* background-repeat: no-repeat; */
+    /* 배경이미지 삽입할 때 short css 방식 */
+    /* background: gold url("../images/icon.png") repeat-x; */
+    /* 배경이미지 위치 */
+    /* background-image: url("../images/icon.png"); */
+    /* background-repeat: no-repeat; */
+    /* 배경이미지 위치잡는 명령 */
+    /* background-position: center top;
+    background-position: center;
+    background-position: center bottom;
+    background-position: right top;
+    background-position: left; */
+    /* 배경이미지 배치2 */
+    /* background-position: 50%;
+    background-position: 90% top;
+    background-position: center 100%; */
+    /* 배경이미지 배치3 */
+    /* background-position: 50px 100px;
+    background-position: center 300px; */
+    /* short hand 방식 */
+    /* background: gold url(../images/car.png) no-repeat 100% bottom;
+    background: gold url(../images/icon.png) no-repeat 50%; */
+
+    /* 배경이미지를 스크롤바에 의해 스크롤할지/고정할지 결정하는 명령 */
+    /* background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background: gold url("../images/icon.png") no-repeat 0 0 fixed;
+}
