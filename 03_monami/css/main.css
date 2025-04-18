@@ -9,6 +9,7 @@ a{text-decoration: none;}
 .header .inner h1{float: left; margin-right: 119px;}
 .header .inner .gnb{float: left;}
 .header .inner .gnb li{float: left; line-height: 89px;}
+.header .inner .gnb li:hover a{color: #c40f39;}
 .header .inner .gnb .first{margin-right: 95px;}
 .header .inner .gnb .li2{margin-right: 68px;}
 .header .inner .gnb .li3{margin-right: 50px;}
