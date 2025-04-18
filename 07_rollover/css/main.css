@@ -24,14 +24,19 @@ button{border: none; background: none; cursor: pointer;}
 .box{width: 800px; margin: auto; margin-bottom: 50px;}
 .btn1{border: 1px solid #dfdfdf; border-radius: 12px; width: 234px; height: 73px; font-size: 20px; font-weight: 700; color: #333;}
 .btn1:hover{background-color: #333; color: #fff;}
-.btn2{width: 112px; height: 40px; border-bottom: 1px solid #222; text-align: left; background: url(../images/ico_plus.png) no-repeat center right;}
-.btn2:hover{background: url(../images/ico_mius.png) no-repeat center right;}
-.btn3{width: 240px; height: 38px; border: 1px solid #c8c8c8; text-align: left; text-indent: 20px; background: url(../images/ico_sel_arr.gif) no-repeat 217px center;}
+.btn2{width: 112px; height: 40px; border-bottom: 1px solid #222; text-align: left; background: url("../images/ico_plus.png") no-repeat center right;}
+.btn2:hover{background: url("../images/ico_mius.png") no-repeat center right;}
+.btn3{width: 240px; height: 38px; border: 1px solid #c8c8c8; text-align: left; text-indent: 20px; background: url("../images/ico_sel_arr.gif") no-repeat 217px center;}
 .btn3:hover{border: 1px solid #333;}
 .btn4{width: 121px; height: 40px; border-radius: 999px; background: #0a0a0a; color: #fff; font-size: 15px;}
 .btn4:hover{border: 2px solid #0a0a0a; background: #fff; color: #0a0a0a;}
 .box2{width: 800px; margin: auto; margin-bottom: 50px; background: #1a1a1a;}
-.btn5{width: 178px; height: 44px; background: #1a1a1a url(../images/icon_arrow_top_16x16_w.svg) no-repeat 148px center; border-radius: 999px; border: 1px solid #5f5f5f; color: #f3f3f3; text-align: left; text-indent: 15px; margin: 6px 4px;}
-.btn5:hover{background: #303030 url(../images/icon_arrow_top_16x16_w.svg) no-repeat 148px center; border: 1px solid #6f6f6f;}
+.btn5{width: 178px; height: 44px; background: #1a1a1a url("../images/icon_arrow_top_16x16_w.svg") no-repeat 148px center; border-radius: 999px; border: 1px solid #5f5f5f; color: #f3f3f3; text-align: left; text-indent: 15px; margin: 6px 4px;}
+.btn5:hover{background: #303030 url("../images/icon_arrow_top_16x16_w.svg") no-repeat 148px center; border: 1px solid #6f6f6f;}
 .btn6{width: 179px; height: 56px; background: #235bf5; border-radius: 4px; color: #fff; font-size: 17px; font-weight: 800;}
 .btn6:hover{background: #0d43cc;}
+
+.box3{width: 500px; height: 400px; background: gold; margin: auto;}
+.box3 h1{width: 240px; height: 26px; background: url("../images/spr_common.png") no-repeat;}
+.box3 .btn7{width: 27px; height: 27px; background: url("../images/spr_common.png") no-repeat; background-position-y: -183px;}
+.box3 .btn8{width: 62px; height: 24px; background: url("../images/spr_common.png") no-repeat; background-position-x: -242px;}
