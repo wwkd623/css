@@ -30,7 +30,8 @@ button{border: none; background: none; cursor: pointer;}
 .btn3:hover{border: 1px solid #333;}
 .btn4{width: 121px; height: 40px; border-radius: 999px; background: #0a0a0a; color: #fff; font-size: 15px;}
 .btn4:hover{border: 2px solid #0a0a0a; background: #fff; color: #0a0a0a;}
-.btn5{width: 178px; height: 44px; background: #1a1a1a url(../images/icon_arrow_top_16x16_w.svg) no-repeat 148px center; border-radius: 999px; border: 1px solid #5f5f5f; color: #f3f3f3; text-align: left; text-indent: 15px;}
+.box2{width: 800px; margin: auto; margin-bottom: 50px; background: #1a1a1a;}
+.btn5{width: 178px; height: 44px; background: #1a1a1a url(../images/icon_arrow_top_16x16_w.svg) no-repeat 148px center; border-radius: 999px; border: 1px solid #5f5f5f; color: #f3f3f3; text-align: left; text-indent: 15px; margin: 6px 0;}
 .btn5:hover{background: #303030 url(../images/icon_arrow_top_16x16_w.svg) no-repeat 148px center; border: 1px solid #6f6f6f;}
 .btn6{width: 179px; height: 56px; background: #235bf5; border-radius: 4px; color: #fff; font-size: 17px; font-weight: 800;}
 .btn6:hover{background: #0d43cc;}
