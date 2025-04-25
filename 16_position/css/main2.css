@@ -1,0 +1,28 @@
+@charset "utf-8";
+.box{width: 1000px; height: 1000px; background: lightblue; margin: auto; position: relative;}
+.box div{width: 200px; height: 200px;}
+.box div:first-child,
+.box div:nth-child(2),
+.box div:nth-child(3),
+.box div:nth-child(4){background: pink;}
+.box div:first-child{position: absolute; left: 0; top: 0;}
+.box div:nth-child(2){position: absolute; right: 0; top: 0;}
+.box div:nth-child(3){position: absolute; left: 0; bottom: 0;}
+.box div:nth-child(4){position: absolute; right: 0; bottom: 0;}
+.box div:nth-child(5),
+.box div:nth-child(6),
+.box div:nth-child(7),
+.box div:nth-child(8){background: salmon;}
+.box div:nth-child(5){position: absolute; left: 100px; top: 100px;}
+.box div:nth-child(6){position: absolute; right: 100px; top: 100px;}
+.box div:nth-child(7){position: absolute; left: 100px; bottom: 100px;}
+.box div:nth-child(8){position: absolute; right: 100px; bottom: 100px;}
+.box div:nth-child(9),
+.box div:nth-child(10),
+.box div:nth-child(11),
+.box div:nth-child(12){background: beige;}
+.box div:nth-child(9){position: absolute; left: 200px; top: 200px;}
+.box div:nth-child(10){position: absolute; right: 200px; top: 200px;}
+.box div:nth-child(11){position: absolute; left: 200px; bottom: 200px;}
+.box div:nth-child(12){position: absolute; right: 200px; bottom: 200px;}
+.box div:last-child{background: #fff; position: absolute; left: 50%; top: 50%;  margin: -100px 0 0 -100px;}
