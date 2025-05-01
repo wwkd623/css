@@ -14,7 +14,7 @@ a{text-decoration: none;}
 .wrap .contents .banner{background: blueviolet;}
 .wrap .contents .go{background: hotpink;}
 .wrap .footer{width: 100%; height: 100px;}
-.wrap .footer h1{width: 200px; height: 100px; text-align: center; line-height: 100px; background: skyblue; float: left;}
+.wrap .footer h1{width: 200px; height: 100px; text-align: center; line-height: 100px; background: skyblue; float: left; color: #333;}
 .wrap .footer div{width: 1000px; height: 50px; text-align: center; line-height: 50px; font-size: 24px; font-weight: 900; color: #333; float: right;}
 .wrap .footer .bottom{background: darkcyan;}
 .wrap .footer .copy{background: darkslateblue;}
