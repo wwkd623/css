@@ -7,14 +7,14 @@ li{list-style: none;}
 .wrap .header{width: 100%; height: 100px; background: aqua; display: flex; justify-content: space-between; align-items: center;}
 .wrap .header h1{width: 200px; height: 100px; background: bisque; display: flex; justify-content: center; align-items: center;}
 .wrap .header ul{width: 600px; height: 100px; background: cadetblue; display: flex; justify-content: space-between; align-items: center;}
-.wrap .slide{width: 100%; height: 300px; background: chartreuse;}
+.wrap .slide{width: 100%; height: 300px; background: chartreuse; font-size: 24px; font-weight: 900; text-align: center; line-height: 300px;}
 .wrap .contents{width: 100%; height: 200px; background: darkorange; display: flex;}
 .wrap .contents div{width: 400px; height: 200px; font-size: 24px; font-weight: 900; text-align: center; line-height: 200px;}
 .wrap .contents .border{background: gray;}
 .wrap .contents .banner{background: hotpink;}
 .wrap .contents .go{background: indianred;}
 .wrap .footer{width: 100%; height: 100px; background: lavender; display: flex; }
-.wrap .footer h1{width: 200px; height: 100px; background: khaki;}
+.wrap .footer h1{width: 200px; height: 100px; background: khaki; text-align: center; line-height: 100px;}
 .wrap .footer div{font-size: 24px; font-weight: 900; text-align: center; line-height: 100px;}
 .wrap .footer .copy{width: 800px; height: 100px; background: lawngreen;}
 .wrap .footer .sns{width: 200px; height: 100px; background: magenta;}
