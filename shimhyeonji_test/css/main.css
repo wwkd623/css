@@ -60,6 +60,12 @@ li{list-style: none;}
     background: #fff;
     border-bottom: 1px solid #c8d6d7;
 }
+.gnb li{
+    height: 100%;
+}
+.gnb li:hover a{
+    color: #ed174d;
+}
 .gnb li a{
     display: block;
     width: 100%;
@@ -390,7 +396,7 @@ li{list-style: none;}
     color: #fff;
 }
 .tabbar li:last-child{
-    background: #e0e0e0 url("../images/ico-phone-call2.png") no-repeat 30% center;
+    background: #e0e0e0 url("../images/ico-phone-call2.png") no-repeat 28% center;
     background-size: 21px 20px;
 }
 .tabbar li:last-child a{
