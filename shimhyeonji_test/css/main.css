@@ -80,39 +80,40 @@ li{list-style: none;}
 .main{
     width: 100%;
 }
+/* visual 영역 */
 .main .visual{
     width: 100%;
 }
 .main .visual img{
     width: 100%;
 }
-/* main 영역 끝 */
+/* visual 영역 끝 */
 
 /* section1 영역 */
-.section1{
+.main .section1{
     width: 100%;
     padding: 40px 20px;
     box-sizing: border-box;
     background: #fff;
 }
-.section1 h2{
+.main .section1 h2{
     text-align: center;
     font-size: 20px;
     font-weight: 700;
     color: #000;
     margin-bottom: 46px;
 }
-.section1 ul{
+.main .section1 ul{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 46px;
 }
-.section1 ul li{
+.main .section1 ul li{
     width: 60px;
     text-align: center;
 }
-.section1 ul li a{
+.main .section1 ul li a{
     display: block;
     width: 100%;
     height: 100%;
@@ -123,80 +124,80 @@ li{list-style: none;}
     padding-top: 62px;
     box-sizing: border-box;
 }
-.section1 ul li:first-child a{
+.main .section1 ul li:first-child a{
     background: url("../images/ico-45-tv.png") no-repeat 50% 0;
     background-size: 45px;
 }
-.section1 ul li:nth-child(2) a{
+.main .section1 ul li:nth-child(2) a{
     background: url("../images/ico-45-internet.png") no-repeat 50% 0;
     background-size: 45px;
 }
-.section1 ul li:nth-child(3) a{
+.main .section1 ul li:nth-child(3) a{
     background: url("../images/ico-45-rental.png") no-repeat 50% 0;
     background-size: 45px;
 }
-.section1 ul li:last-child a{
+.main .section1 ul li:last-child a{
     background: url("../images/ico-45-combination.png") no-repeat 50% 0;
     background-size: 45px;
 }
 /* section1 영역 끝 */
 
 /* section2 영역 */
-.section2{
+.main .section2{
     width: 100%;
     background: #f2f3f7;
     text-align: center;
     padding: 58px 0;
     box-sizing: border-box;
 }
-.section2 h2{
+.main .section2 h2{
     font-size: 22px;
     font-weight: 700;
     color: #000;
     margin-bottom: 24px;
 }
-.section2 h4{
+.main .section2 h4{
     font-size: 14px;
     font-weight: 500;
     color: #000;
     margin-bottom: 24px;
 }
-.section2 img{
+.main .section2 img{
     width: 320px;
     height: 320px;
 }
 /* section2 영역 끝 */
 
 /* section3 영역 */
-.section3{
+.main .section3{
     width: 100%;
     background: #ed174d;
     text-align: center;
     padding: 60px 0;
     box-sizing: border-box;
 }
-.section3 h2{
+.main .section3 h2{
     font-size: 24px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 14px;
 }
-.section3 .wrap{
+.main .section3 .wrap{
     width: 320px;
     margin: auto;
     border-bottom: 1px solid #fff;
 }
-.section3 .wrap input{
+.main .section3 .wrap input{
     width: 270px;
     height: 60px;
     border: none;
     background: none;
 }
-.section3 .wrap input::placeholder{
+.main .section3 .wrap input::placeholder{
     color: #fff;
     font-size: 20px;
 }
-.section3 .wrap button{
+.main .section3 .wrap button{
     width: 37.5px;
     height: 27px;
     text-indent: -99999px;
@@ -204,6 +205,7 @@ li{list-style: none;}
     background-size: 27.5px 27px;
 }
 /* section3 영역 끝 */
+/* main 영역 끝 */
 
 /* footer 영역 */
 .footer{
