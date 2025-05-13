@@ -1,0 +1,74 @@
+@charset "utf-8";
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+body{font-family: 'S-CoreDream-3Light',sans-serif;}
+li{list-style: none;}
+a{text-decoration: none;}
+*{margin: 0; padding: 0;}
+.section{
+    width: 100%;
+    height: 1080px;
+    background: url("../images/bg_about.jpg") no-repeat center top;
+}
+.section .inner{
+    width: 1280px;
+    margin: auto;
+    /* background: gold; */
+}
+.section .inner h2{
+    color: #fff;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 73px;
+    /* 글자에 그림자효과 줄때: x축 y축 블러값 컬러및투명도 */
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    padding-top: 400px;
+    margin-bottom: 50px;
+}
+.section .inner ul{
+    display: flex;
+    gap: 40px;
+}
+.section .inner ul li{
+    width: 400px;
+    height: 272px;
+}
+.section .inner ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.section .inner ul li a .imgbox{
+    width: 100%;
+    height: 100%;
+}
+.section .inner ul li a .imgbox img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.section .inner ul li a:hover .imgbox img{
+    transform: scale(1.1);
+}
+.section .inner ul li a .tit{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.section .inner ul li a .tit h3{
+    font-size: 20px;
+    color: #262626;
+}
