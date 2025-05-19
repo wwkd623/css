@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{font-family: "Noto Sans KR", sans-serif; font-size: 14px; color: #333;}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none; background: none; cursor: pointer;}
+.header{
+    width: 1100px;
+    height: 66px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+.header h1 a{
+    display: block;
+    width: 113px;
+    height: 37px;
+    text-indent: -99999px;
+    background: url("../images/header_logo.jpg") no-repeat;
+}
+.header .gnb{
+    display: flex;
+    gap: 65px;
+}
+.header .gnb>li{
+    position: relative;
+}
+.header .gnb>li:hover>.depth2{
+    display: block;
+}
+.header .gnb>li::after{
+    content: "";
+    width: 1px;
+    height: 27px;
+    background: #c8c8c8;
+    position: absolute;
+    right: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header .gnb>li:last-child:after{
+    display: none;
+}
+.header .gnb>li>a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+}
+.header .gnb>li:hover>a{
+    color: #3877be;
+    border-bottom: 2px solid #52789f;
+}
+/* 2단메뉴 */
+.header .gnb>li>.depth2{
+    width: 164px;
+    background: #fff;
+    border: 0 1px 1px solid #b6cce1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22px;
+    text-align: center;
+    display: none;
+    padding-top: 21px;
+}
+.header .gnb>li>.depth2>li{
+    padding: 11px 0;
+}
+.header .gnb>li>.depth2>li>a{
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    padding: 0 16px;
+    letter-spacing: -1px;
+}
+.header .gnb>li>.depth2>li:hover{
+    background: #3381c1;
+}
+.header .gnb>li>.depth2>li:hover>a{
+    color: #fff;
+    background: url("../images/icon_arrow2.png") no-repeat left center;
+}
+.header button{
+    font-size: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    color: #ababab;
+    font-weight: 700;
+}
+.main{
+    width: 100%;
+}
+.main .visual{
+    width: 100%;
+    height: 960px;
+    background: url("../images/mainslide_img01.jpg") no-repeat;
+}
