@@ -1,0 +1,22 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun gothic", sans-serif;}
+*{margin: 0; padding: 0;}
+button{border: none; background: none; cursor: pointer;}
+div{
+    margin: 44px auto 0;
+    text-align: center;
+    width: 800px;
+    height: 600px;
+    border: 1px solid #000;
+    background-image: linear-gradient(to bottom, #009804, #fff);
+}
+button{
+    display: block;
+    margin: 50px auto 0;
+    border: 1px solid #000;
+    text-align: center;
+    width: 126px;
+    height: 41px;
+    border-radius: 999px;
+    background-image: linear-gradient(to bottom, #a0d8fb, #176cbd);
+}
