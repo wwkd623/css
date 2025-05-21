@@ -54,12 +54,12 @@ a{text-decoration: none;}
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
     position: relative;
 }
 .gnb>li{
     height: 58px;
     line-height: 58px;
+    padding: 0 35px;
 }
 .gnb>li:hover>.depth2{
     display: flex;
