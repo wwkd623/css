@@ -47,7 +47,7 @@ a{text-decoration: none;}
     text-indent: -99999px;
 }
 .gnb{
-    width: 1360px;
+    width: 100%;
     height: 58px;
     margin: auto;
     background: #fff;
@@ -55,6 +55,34 @@ a{text-decoration: none;}
     justify-content: center;
     align-items: center;
     gap: 70px;
+    position: relative;
+}
+.gnb>li{
+    height: 58px;
+    line-height: 58px;
+}
+.gnb>li:hover>.depth2{
+    display: flex;
+}
+.gnb>li>.depth2{
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    left: 0;
+    bottom: -43px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    display: none;
+}
+.gnb>li>.depth2>li>a{
+    color: #777;
+    font-size: 13px;
+}
+.gnb>li>.depth2>li:hover>a{
+    color: #332926;
 }
 .gnb>li>a{
     font-size: 16px;
