@@ -1,0 +1,37 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgun gothic", sans-serif;}
+*{margin: 0; padding: 0;}
+div{
+    width: 710px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.box1{
+    margin-top: 38px;
+    border-radius: 8px 24px;
+    padding-bottom: 50px;
+}
+.box2{
+    border-radius: 8px;
+    box-shadow: 0 0 5px #555;
+    padding-bottom: 50px;
+}
+.box3{
+    background: #f2f2f2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 3px 3px red;
+}
+.box4{
+    background: #000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 3px 3px #fff;
+}
+.box4 h1 span{
+    text-shadow: 0 0 10px #fff;
+}
