@@ -47,7 +47,7 @@ a{text-decoration: none;}
     text-indent: -99999px;
 }
 .gnb{
-    width: 100%;
+    width: 1360px;
     height: 58px;
     margin: auto;
     background: #fff;
@@ -65,10 +65,11 @@ a{text-decoration: none;}
     display: flex;
 }
 .gnb>li>.depth2{
-    width: 100%;
+    width: 1360px;
     height: 43px;
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -43px;
     background: rgba(255, 255, 255, 0.5);
     display: flex;
