@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{font-family: "Noto Sans KR", sans-serif;}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.section{
+    width: 100%;
+    height: 100vh;
+    background: #f3f3f3;
+    padding-top: 20px;
+}
+.section .inner{
+    width: 1100px;
+    height: 260px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section .inner .left{
+    width: 540px;
+    height: 260px;
+    background: url("../images/bg_search2024_03_02.jpg") no-repeat;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.section .inner .left h3{
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+.section .inner .left p{
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 18px;
+}
+.section .inner .left form fieldset{
+    border: none;
+}
+.section .inner .left form fieldset legend{
+    position: absolute;
+    left: -99999px;
+}
+.section .inner .left form fieldset input{
+    width: 220px;
+    height: 38px;
+    border: 1px solid #2264ba;
+    text-indent: 10px;
+    float: left;
+    outline: none;
+}
+.section .inner .left form fieldset button{
+    border: none;
+    width: 80px;
+    height: 40px;
+    background: #2264ba;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+}
+.section .inner .right{
+    width: 540px;
+    height: 260px;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.section .inner .right .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.section .inner .right .wrap .menu{
+    display: flex;
+    gap: 30px;
+}
+.section .inner .right .wrap .menu li{
+    position: relative;
+}
+.section .inner .right .wrap .menu li:first-child a{
+    color: #222;
+}
+.section .inner .right .wrap .menu li::after{
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #ccc;
+    position: absolute;
+    right: -15px;
+    top: 7.5px;
+}
+.section .inner .right .wrap .menu li:last-child::after{
+    display: none;
+}
+.section .inner .right .wrap .menu li a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #888;
+}
+.section .inner .right .wrap .more{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    text-indent: -99999px;
+    position: relative;
+}
+.section .inner .right .wrap .more::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("../images/spr_common.png") no-repeat;
+    background-position: -147px -77px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.section .inner .right .list li{
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.section .inner .right .list li::before{
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #888;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.section .inner .right .list li a{
+    text-indent: 10px;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+    /* 말줄임표 방법 */
+    /* 가로사이즈 고정 */
+    width: 334px;
+    /* 줄바뀜 방지 */
+    white-space: nowrap;
+    /* 박스크기 안에서만 내용이 보이게 하는 명령 */
+    overflow: hidden;
+    /* 넘치는 텍스트를 말줄임표로 보이게 하는 명령 */
+    text-overflow: ellipsis;
+}
+.section .inner .right .list li:first-child::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../images/spr_common.png") no-repeat;
+    background-position: -33px -125px;
+    position: absolute;
+    left: 334px;
+    top: 10px;
+}
+.section .inner .right .list li span{
+    font-size: 15px;
+    color: #999;
+}
