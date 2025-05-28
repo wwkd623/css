@@ -34,5 +34,5 @@ ul li:nth-child(3) img{
     filter: grayscale(100%);
 }
 ul li:last-child img{
-    filter: contrast(150%) brightness(70%);
+    filter: contrast(150%) brightness(70%) drop-shadow(10px 10px 10px black);
 }
