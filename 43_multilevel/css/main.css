@@ -64,6 +64,7 @@ a{text-decoration: none;}
 .inner .section1 .list li{
     list-style: disc;
     margin-left: 40px;
+    font-size: 14px;
 }
 .inner .copy{
     width: 100%;
