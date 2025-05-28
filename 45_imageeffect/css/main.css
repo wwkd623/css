@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{}
+.test1{
+    filter: blur(10px);
+}
+.test2{
+    filter: brightness(200%);
+    filter: brightness(50%);
+}
+.test3{
+    filter: contrast(150%);
+}
+.test4{
+    filter: drop-shadow(20px 10px 10px gray);
+    filter: drop-shadow(0 0 10px gray);
+}
+.test5{
+    filter: grayscale(0.5);
+    filter: grayscale(1);
+}
+.test6{
+    filter: sepia(100%);
+}
+.test7{
+    filter: saturate(200%);
+}
+.test8{
+    filter: opacity(30%);
+    filter: opacity(10%) blur(10px);
+}
+.test9{
+    filter: invert(1);
+}
+.test10{
+    filter: hue-rotate(80deg);
+}
+ul{
+    width: 1140px;
+    display: flex;
+    gap: 20px;
+}
+ul li{
+    width: 285px;
+    height: 285px;
+}

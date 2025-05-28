@@ -1,0 +1,38 @@
+@charset "utf-8";
+body{font-family: sans-serif;}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+ul{
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+}
+ul li{
+    width: 285px;
+    height: 285px;
+}
+ul li img{
+    width: 100%;
+    height: 100%;
+}
+ul li:first-child img{
+    filter: blur(10px);
+}
+ul li:first-child:hover img{
+    filter: invert(100%);
+}
+ul li:nth-child(2) img{
+    filter: opacity(40%);
+}
+ul li:nth-child(2):hover img{
+    filter: opacity(100%);
+}
+ul li:nth-child(3) img{
+    filter: grayscale(100%);
+}
+ul li:last-child img{
+    filter: contrast(150%) brightness(70%);
+}
