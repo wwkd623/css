@@ -33,7 +33,7 @@ a{text-decoration: none;}
     /* 다단경계선설정 */
     column-rule: 1px dotted #000;
 }
-.inner .contents h3{
+.inner div h3{
     font-size: 20px;
     margin: 20px 0;
 }
@@ -54,4 +54,24 @@ a{text-decoration: none;}
     background: #ccc;
     display: flex;
     justify-content: space-between;
+}
+.inner .section1{
+    width: 100%;
+}
+.inner .section1 .list{
+    width: 100%;
+}
+.inner .section1 .list li{
+    list-style: disc;
+    margin-left: 40px;
+}
+.inner .copy{
+    width: 100%;
+    height: 70px;
+    font-size: 12px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 22px;
 }
