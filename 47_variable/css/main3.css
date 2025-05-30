@@ -1,0 +1,72 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{font-family: 'Pretendard-Regular', sans-serif;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+:root{
+    --point_color: #e94c4c;
+    --main_text: #111;
+    --sub_text: #555;
+    --border_color: #ccc;
+    --white: #fff;
+    --tit_font: 26px;
+    --tag_font: 20px;
+    --sv_font: 16px;
+    --gap: 20px;
+    --round12: 12px;
+    --round4: 4px;
+    --margin-t: 20px;
+    --margin-b: 6px;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap);
+    margin-top: var(--margin-t);
+}
+ul li{
+    width: 318px;
+    border: 1px solid var(--border_color);
+    border-radius: var(--round12);
+    overflow: hidden;
+    position: relative;
+}
+ul li a .imgbox{
+    width: 100%;
+    height: 240px;
+}
+ul li a .imgbox img{
+    width: 100%;
+    height: 100%;
+}
+ul li a .service{
+    position: absolute;
+    left: 20px;
+    top: 224px;
+    background: var(--point_color);
+    color: var(--white);
+    font-size: var(--sv_font);
+    padding: 8px 12px;
+    border-radius: var(--round4);
+}
+ul li a .txtbox{
+    width: 100%;
+    padding: 20px;
+}
+ul li a .txtbox h3{
+    margin: 12px 0;
+    color: var(--main_text);
+    font-size: var(--tit_font);
+}
+ul li .txtbox p{
+    color: var(--sub_text);
+    font-size: var(--tag_font);
+    margin-bottom: var(--margin-b);
+}
