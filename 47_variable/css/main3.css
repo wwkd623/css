@@ -25,7 +25,8 @@ a{text-decoration: none;}
     --margin-b: 6px;
 }
 ul{
-    width: 100%;
+    width: 660px;
+    margin: auto;
     display: flex;
     justify-content: center;
     gap: var(--gap);
