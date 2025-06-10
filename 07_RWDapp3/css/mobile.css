@@ -1,0 +1,15 @@
+@media ( min-width: 320px ) and ( max-width: 767px ){
+    header{
+        height: 70px;
+    }
+    header .inner{
+        width: 100%;
+        padding: 0 15px;
+    }
+    header .inner .gnbwrap{
+        display: none;
+    }
+    header .inner .menu{
+        display: block;
+    }
+}

@@ -1,0 +1,43 @@
+header{
+    width: 100%;
+    height: 74px;
+    border-bottom: 1px solid #000;
+}
+header .inner{
+    width: 1700px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner h1 a{
+    display: block;
+    width: 128px;
+    height: 58px;
+    text-indent: -99999px;
+    background: url("../images/unnamed.png") no-repeat;
+    background-size: 128px 58px;
+}
+header .inner .gnbwrap{
+    display: flex;
+    gap: 60px;
+}
+header .inner .gnbwrap nav .gnb{
+    display: flex;
+    gap: 32px;
+}
+header .inner .gnbwrap nav .gnb li a,
+header .inner .gnbwrap .lang{
+    font-size: 14px;
+    font-weight: 700;
+    color: #383838;
+}
+header .inner .gnbwrap .lang .fa-globe{
+    margin-right: 4px;
+}
+header .inner .menu{
+    font-size: 24px;
+    color: #383838;
+    display: none;
+}
