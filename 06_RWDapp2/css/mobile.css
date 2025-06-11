@@ -1,0 +1,119 @@
+@media ( min-width: 320px ) and ( max-width: 767px ){
+    .wrap header{
+        height: 50px;
+    }
+    .wrap header .inner{
+        width: 100%;
+    }
+    .wrap header .inner h1{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .wrap header .inner nav,
+    .wrap header .inner .sns{
+        display: none;
+    }
+    .wrap header .inner .m_btn{
+        display: block;
+    }
+    .wrap header .inner .m_btn .fa-bars{
+        font-size: 24px;
+        color: #333;
+        padding-left: 20px;
+    }
+    .wrap main .visual{
+        height: 420px;
+        background: url("../images/main02.jpg") no-repeat;
+        background-size: cover;
+    }
+    .wrap main .visual .tit h2{
+        font-size: 45px;
+    }
+    .wrap main .visual .tit p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .wrap main .first{
+        padding: 30px 0;
+    }
+    .wrap main .first P{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .wrap main .work{
+        padding: 42px 0 35px;
+    }
+    .wrap main .work .inner{
+        width: 100%;
+    }
+    .wrap main .work .inner .tit2 h2{
+        font-size: 24px;
+    }
+    .wrap main .work .inner .tit2 p{
+        font-size: 14px;
+        padding: 0 46px;
+    }
+    .wrap main .work .inner .list{
+        flex-direction: column;
+        padding: 0 25px;
+    }
+    .wrap main .work .inner .list li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+     .wrap main .work .inner .list li:last-child{
+        margin-bottom: 0;
+    }
+    .wrap main .skill{
+        padding: 0 0 50px;
+    }
+     .wrap main .skill .inner{
+        width: 100%;
+    }
+    .wrap main .skill .inner .list2{
+        padding: 0 20px;
+    }
+    .wrap main .skill .inner .list2 li{
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .wrap main .skill .inner .list2 li:nth-child(2),
+    .wrap main .skill .inner .list2 li:nth-child(4),
+    .wrap main .skill .inner .list2 li:last-child{
+        background: #eee;
+    }
+    .wrap main .skill .inner .list2 li a p{
+        text-align: justify;
+    }
+    .wrap main .second{
+        height: 150px;
+        background-size: cover;
+    }
+    .wrap main .second p{
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -1px;
+    }
+    .wrap main .news .inner{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .wrap main .news .inner .tit3 h2{
+        font-size: 24px;
+    }
+    .wrap main .news .inner .tit3>p{
+        font-size: 14px;
+        padding: 0 46px;
+    }
+    .wrap main .news .inner .list3{
+        flex-direction: column;
+    }
+    .wrap main .news .inner .list3 li{
+        width: 100%;
+    }
+    .wrap main .today>p{
+        font-size: 12px;
+    }
+}
