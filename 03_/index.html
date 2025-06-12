@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산술연산자</title>
+</head>
+<body>
+    <!-- 
+        1. 산술연산자 +,-,*,/,%(나머지),**(제곱승)
+        2. 출력할 때 서로 type(성격)이 다를 때에는 연결연산자(+) ex) "문자" + 변수, 숫자 + 변수 등
+     -->
+    <script>
+        let num1 = 10;
+        let num2 = 20;
+        let num3 = 30;
+
+        let num4 = num1 + num2;
+        let num5 = num1 - num2;
+        let num6 = num2 * num3;
+        let num7 = num3 / num1;
+        // 나머지값 구하는 %
+        let num8 = num3 % num1;
+        // 제곱근 구하는 **
+        let num9 = num3 ** 2;
+        document.write("num4의 변수값 = " + num4 + "<br>");
+        document.write("num5의 변수값 = " + num5 + "<br>");
+        document.write("num6의 변수값 = " + num6 + "<br>");
+        document.write("num7의 변수값 = " + num7 + "<br>");
+        document.write("num8의 변수값 = " + num8 + "<br>");
+        document.write("num9의 변수값 = " + num9 + "<br>");
+
+        let cha1 = "hi";
+        let cha2 = "hello";
+        let cha3 = "welcome";
+
+        let cha4 = cha1 + cha2 + cha3;
+        document.write("cha4의 변수값 = " + cha4 + "<br>");
+
+        let cm1 = "10";
+        let cm2 = "20";
+        let cm3 = "30";
+
+        let cm4 = cm1 + cm2;
+        document.write("cm4의 변수값 = " + cm4 + "<br>");
+    </script>
+</body>
+</html>
