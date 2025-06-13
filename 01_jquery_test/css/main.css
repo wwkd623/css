@@ -1,0 +1,17 @@
+@charset "utf-8";
+body{}
+.box{
+    width: 100%;
+}
+.box div{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    background: gold;
+}
+.box p{
+    text-align: center;
+}
+.box p button{
+    cursor: pointer;
+}

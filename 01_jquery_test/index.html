@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery test</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <p><button>click!</button></p>
+    </div>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <!-- 제이쿼리 프로그램 -->
+    <script>
+        // 제이쿼리 프로그래밍 하기위한 준비 작업(바인딩)
+        $(function(){
+            // 제이쿼리 선택자
+            // $(선택자).실행할 함수();
+            // css() -> 자바스크립트 프로그램으로 css에 접근
+
+            // 버튼을 클릭해서 기능한다.
+            $("button").click(function(){
+                // 선택자를 css 명령한다
+                $(".box div").css({"background": "green"})
+            })
+        })
+    </script>
+</body>
+</html>
