@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if조건문</title>
+</head>
+<body>
+    <!-- 
+        1. if문 제 1형식
+        if(조건식){
+            조건이 참일 때 프로그램 실행
+        }
+    -->
+    <script>
+        // 외부로부터 데이터를 받아서(prompt) 그 점수가 80점 이상이면 "합격"을 경고창에 출력
+        // 거짓이면 아무것도 출력하지 않음.
+        let score = prompt("점수를 입력하세요(0~100)");
+        if(score>=80){
+            alert("합격입니다.")
+        }
+    </script>
+</body>
+</html>
