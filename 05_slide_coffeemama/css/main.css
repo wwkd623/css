@@ -44,7 +44,7 @@ header .inner .top .sns li:nth-child(3),
 header .inner .top .sns li:nth-child(4){
     margin-right: 5px;
 }
-header .inner .top .sns li a{
+header .inner .top .sns li>a{
     font-size: 13px;
     color: #8b8b8b;
 }
@@ -60,13 +60,13 @@ header .inner .bottom nav .gnb{
     text-align: center;
     gap: 60px;
 }
-header .inner .bottom nav .gnb li a p{
-    font-size: 14px;
+header .inner .bottom nav .gnb li>a>p{
+    font-size: 15px;
     color: #8b8b8b;
 }
-header .inner .bottom nav .gnb li a h3{
+header .inner .bottom nav .gnb li>a>h3{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     color: #676767;
 }
 main{
@@ -128,4 +128,23 @@ main .slider .slick-next{
     z-index: 10;
     text-indent: -99999px;
     background: url("../images/btn_slide_next_new.png") no-repeat;
+}
+/* 페이지 버튼 변경 */
+main .slider ul.slick-dots{
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+}
+main .slider ul.slick-dots li button{
+    text-indent: -99999px;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+}
+main .slider ul.slick-dots li.slick-active button{
+    background: #f9b233;
 }
