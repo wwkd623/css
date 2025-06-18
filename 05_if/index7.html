@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if조건문 제3형식(중첩if문)</title>
+</head>
+<body>
+    <!-- 
+        if(조건식){
+            참일 때 실행
+            if(조건식){
+                참일 때
+            }else{
+                거짓일 때
+            }
+        }else{
+            거짓일 때 실행
+        }
+    -->
+    <script>
+        // 외부에서 점수 데이터를 받아 80점 이상은 "합격"
+        // 아니면 "불합격"을 경고창에 출력
+        // 단 0-100 사이 점수만 입력받는다.
+        // 0-100 사이 정수가 아니면
+        // "0-100 사이 정수만 입력해주세요." 라고 경고창에 출력
+
+        // let score = prompt("0-100 사이 숫자를 입력해주세요.")
+        // if(score>=80){
+        //     alert("합격");
+        // }else{
+        //     alert("불합격");
+        // }
+
+        let score = prompt("0-100 사이 숫자만 입력해주세요.")
+        // 받은 점수가 0-100 사이 점수인지 판단
+        if(score>=0 && score<=100){
+            if(score>=80){
+                alert("합격")
+            }else{
+                alert("불합격")
+            }
+        }else{
+            alert("0-100 사이의 정수만 입력해주세요.")
+        }
+    </script>
+</body>
+</html>

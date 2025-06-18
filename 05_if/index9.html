@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다중if응용문제</title>
+</head>
+<body>
+    <script>
+        let name = prompt("이름을 입력해주세요.");
+        let kor = prompt("국어점수를 입력해주세요.");
+        let eng = prompt("영어점수를 입력해주세요.");
+        let math = prompt("수학점수를 입력해주세요.");
+        let pc = prompt("컴퓨터점수를 입력해주세요.");
+        let tot = Number(kor) + Number(eng) + Number(math) + Number(pc);
+        let avg = tot/4;
+        let rem = "";
+        if(avg>=90){
+            rem = "수";
+        }else if(avg>=80){
+            rem = "우";
+        }else if(avg>=70){
+            rem = "미";
+        }else if(avg>=60){
+            rem = "양";
+        }else{
+            rem = "가";
+        }
+        let score = "";
+        if(avg>=95){
+            score = "A+";
+        }else if(avg>=90){
+            score = "A";
+        }else if(avg>=85){
+            score = "B+";
+        }else if(avg>=80){
+            score = "B";
+        }else if(avg>=75){
+            score = "C+";
+        }else if(avg>=70){
+            score = "C";
+        }else if(avg>=65){
+            score = "D+";
+        }else if(avg>=60){
+            score = "D";
+        }else{
+            score = "F";
+        }
+
+        document.write("이름 : " + name + "님<br>");
+        document.write("국어점수 : " + kor + "점<br>");
+        document.write("영어점수 : " + eng + "점<br>");
+        document.write("수학점수 : " + math + "점<br>");
+        document.write("컴퓨터점수 : " + pc + "점<br>");
+        document.write("총점 : " + tot + "점<br>");
+        document.write("평균 : " + avg + "점<br>");
+        document.write("평점 : " + rem + "<br>");
+        document.write("학점 : " + score + "<br>");
+    </script>
+</body>
+</html>

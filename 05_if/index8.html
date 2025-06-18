@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if조건문 제5형식()</title>
+</head>
+<body>
+    <!-- 
+        if(조건식){
+            참일 때
+        }else if(조건식){
+            참일 때
+        }else if(조건식){
+            참일 때
+        }else if(조건식){
+            참일 때
+        }else{
+            거짓일 때
+        }
+    -->
+        <script>
+            let name = prompt("이름을 입력해주세요.");
+            let kor = prompt("국어점수를 입력해주세요");
+            let eng = prompt("영어점수를 입력해주세요");
+            let math = prompt("수학점수를 입력해주세요");
+            let tot = Number(kor) + Number(eng) + Number(math);
+            let avg = tot/3;
+
+            let rem = "";
+            if(avg>=90){
+                rem = "수";
+            }else if(avg>=80){
+                rem = "우";
+            }else if(avg>=70){
+                rem = "미";
+            }else if(avg>=60){
+                rem = "양";
+            }else{
+                rem = "가";
+            }
+
+            document.write("이름 : " + name + "님<br>");
+            document.write("국어점수 : " + kor + "점<br>");
+            document.write("영어점수 : " + eng + "점<br>");
+            document.write("수학점수 : " + math + "점<br>");
+            document.write("총점 : " + tot + "점<br>");
+            document.write("평균 : " + avg + "점<br>");
+            document.write("평점 : " + rem + "<br>");
+        </script>
+</body>
+</html>
