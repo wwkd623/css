@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+</head>
+<body>
+    <!-- 
+        1. for(시작값; 조건식이 참일 때 까지; 증감값){
+            반복할 프로그램 실행
+        }
+        2. while문
+            시작값은 변수에 보관
+            while(조건식){
+                반복할 코드;
+                증감값;
+            }
+        3. do ~ while문
+            시작값;
+            do{
+                반복할 코드;
+                증감값;
+            }while(조건식)
+    -->
+    <script>
+        document.write("1. 자바스크립트 반복문입니다.<br>");
+        document.write("<hr>");
+        let i;
+        for(i = 1; i<=10; i++){
+            document.write(i + ". 자바스크립트 반복문입니다.<br>");
+        }
+        document.write("<hr>");
+        for(i = 10; i>=1; i--){
+            document.write(i + ". 자바스크립트 반복문입니다.<br>");
+        }
+
+        document.write("<hr>");
+        let j = 1;
+        while(j<=10){
+            document.write(j + ". 자바스크립트 while 반복문입니다.<br>");
+            j++;
+        }
+        document.write("<hr>");
+        let k = 10;
+        while(k>=1){
+            document.write(k + ". 자바스크립트 while 반복문 역순입니다.<br>");
+            k--;
+        }
+
+        document.write("<hr>");
+        let m = 1;
+        do{
+            document.write(m + ". 자바스크립트 do ~ while 반목문입니다.<br>");
+            m++;
+        }while(m<=10)
+
+        document.write("<hr>");
+        for(i=1; i<=100; i++){
+            document.write(i + "  ");
+        }
+
+        // 홀수출력
+        document.write("<hr>");
+        for(i=1; i<=100; i+=2){
+            document.write(i + "  ");
+        }
+        // 짝수출력
+        document.write("<hr>");
+        for(i=2; i<=100; i+=2){
+            document.write(i + "  ");
+        }
+        // 구구단 5단 출력
+        document.write("<hr>");
+        for(let k=1; k<=9; k++){
+            document.write(5 + " X " + k + " = " + 5*k + "<br>");
+        }
+    </script>
+</body>
+</html>
