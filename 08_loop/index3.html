@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문응용</title>
+</head>
+<body>
+    <ul>
+        <li>메뉴 1</li>
+        <li>메뉴 2</li>
+        <li>메뉴 3</li>
+        <li>메뉴 4</li>
+        <li>메뉴 5</li>
+        <li>메뉴 6</li>
+        <li>메뉴 7</li>
+        <li>메뉴 8</li>
+        <li>메뉴 9</li>
+        <li>메뉴 10</li>
+    </ul>
+    <hr>
+    <script>
+        let list = "<ul>";
+        let i;
+        for(i=1; i<=10; i++){
+            list = list + "<li>메뉴 " + i + "</li>";
+        }
+        list = list + "</ul>";
+        document.write(list);
+    </script>
+</body>
+</html>
