@@ -116,7 +116,7 @@ section .inner .product .list .slick-dots{
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 5px;
+    margin-top: 6px;
     margin-left: -26px;
 }
 section .inner .product .list .slick-dots li button{
@@ -136,7 +136,7 @@ section .inner .product .btn_pause{
     height: 10px;
     position: absolute;
     right: 50%;
-    margin-right: -32px;
+    margin-right: -36px;
     bottom: 18px;
     background: url("../images/btn_rolling_s_stop.png") no-repeat;
     text-indent: -99999px;
@@ -146,7 +146,7 @@ section .inner .product .btn_play{
     height: 10px;
     position: absolute;
     right: 50%;
-    margin-right: -50px;
+    margin-right: -54px;
     bottom: 18px;
     background: url("../images/btn_rolling_s_play.png") no-repeat;
     text-indent: -99999px;
