@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열함수응용</title>
+</head>
+<body>
+    <script>
+        let animals = ["Aardvark",
+                    "Albatross",
+                    "Alligator",
+                    "Alpaca",
+                    "Ant",
+                    "Ape",
+                    "Armadillo",
+                    "Donkey",
+                    "Baboon",
+                    "Badger",
+                    "Barracuda",
+                    "Bat",
+                    "Bear",
+                    "Beaver",
+                    "Bee",
+                    "Bison",
+                    "Cat",
+                    "Caterpillar",
+                    "Cattle",
+                    "Chamois",
+                    "Cheetah",
+                    "Chicken",
+                    "Chimpanzee",
+                    "Chinchilla",
+                    "Chough",
+                    "Clam",
+                    "Cobra",
+                    "Cockroach",
+                    "Cod",
+                    "Cormorant",
+                    "Dugong",
+                    "Dunlin",
+                    "Eagle",
+                    "Echidna",
+                    "Eel",
+                    "Eland",
+                    "Elephant",
+                    "Elk",
+                    "Emu",
+                    "Falcon",
+                    "Ferret",
+                    "Finch",
+                    "Fish",
+                    "Flamingo",
+                    "Fly",
+                    "Fox",
+                    "Frog",
+                    "Gaur",
+                    "Gazelle",
+                    "Gerbil",
+                    "Giraffe",
+                    "Grasshopper",
+                    "Heron",
+                    "Herring",
+                    "Hippopotamus",
+                    "Hornet",
+                    "Horse",
+                    "Kangaroo",
+                    "Kingfisher",
+                    "Koala",
+                    "Kookabura",
+                    "Moose",
+                    "Narwhal",
+                    "Newt",
+                    "Nightingale",
+                    "Octopus",
+                    "Okapi",
+                    "Opossum",
+                    "Quail",
+                    "Quelea",
+                    "Quetzal",
+                    "Rabbit",
+                    "Raccoon",
+                    "Rail",
+                    "Ram",
+                    "Rat",
+                    "Raven",
+                    "Red deer",
+                    "Sandpiper",
+                    "Sardine",
+                    "Sparrow",
+                    "Spider",
+                    "Spoonbill",
+                    "Squid",
+                    "Squirrel",
+                    "Starling",
+                    "Stingray",
+                    "Tiger",
+                    "Toad",
+                    "Whale",
+                    "Wildcat",
+                    "Wolf",
+                    "Worm",
+                    "Wren",
+                    "Yak",
+                    "Zebra"]
+        document.write(animals.length + "<br>");
+        document.write("<br>");
+
+        animals.pop();
+        document.write("1번 배열 data에서  마지막 아이템 “Zebra” 제거하기<br>");
+        document.write(animals + "<br>");
+        document.write("<br>");
+        
+        animals.push("Dog");
+        document.write("2번 배열에 “Dog” 추가하기<br>");
+        document.write(animals + "<br>");
+        document.write("<br>");
+
+        animals.push("Mosquito", "Mouse", "Mule");
+        document.write("3번 배열에 “Mosquito”,“Mouse”,“Mule” 추가하기<br>");
+        document.write(animals + "<br>");
+        document.write("<br>");
+
+        document.write("4번 배열에 Human 이 있는가?<br>");
+        document.write(animals.includes("Human") + "<br>");
+        document.write("<br>");
+
+        document.write("5번 배열에 Cat 이 있는가?<br>");
+        document.write(animals.includes("Cat") + "<br>");
+        document.write("<br>");
+
+        animals[animals.indexOf("Red deer")] = "Deer";
+        document.write("6번 배열에서 Red deer 을  찾아서 데이타를  Deer 로 바꾸시오<br>");
+        document.write(animals + "<br>");
+        document.write("<br>");
+
+        document.write("7번 배열에서 Spider 부터 3개의 아이템을 기존 배열에서 제거하시오(원본배열)<br>");
+        animals.splice(animals.indexOf("Spider"),3) 
+        document.write(animals + "<br>");
+        document.write("<br>");
+
+        document.write("8번 배열에서 Tiger 이후의 값을 제거하시오<br>");
+        // 기준 데이터 +1하면 이후 다 지워짐
+        animals.splice(animals.indexOf("Tiger")+1);
+        document.write(animals + "<br>");
+        document.write("<br>");
+        
+        document.write("9번 B 로 시작되는 아이템인 Baboon 부터 Bison 까지 가져와 새로운 배열에 저장하시오<br>");
+        // 마지막 데이터도 포함하려면 데이터 +1
+        let b_animals =  animals.slice(animals.indexOf("Baboon"),animals.indexOf("Bison")+1);
+        document.write(b_animals + "<br>");
+        document.write("<br>");
+
+        document.write("10번 전체 배열의 개수를 구하시오<br>");
+        document.write(animals.length + "<br>");
+        document.write("<br>");
+
+        document.write("11번 배열의 data를 영문순으로 오름차순으로 정열하시오<br>");
+        document.write(animals.sort() + "<br>");
+        document.write("<br>");
+
+        document.write("12번 배열의 데이타와 데이타 값사이를 # 로 구분하시오<br>");
+        let canimals = animals.join("#");
+        document.write(canimals + "<br>");
+        document.write("<br>");
+
+        document.write("13번 for-in문을 이용하여 배열의 데이타 전체를 출력하시오. 단, 동물 10개씩 출력하고 줄을 바꿔서 출력한다(동물이름 5칸뛰우고 동물이름)<br>");
+        for(let i=0;i<85;i++){
+            if(i%10==0){
+                document.write("<br>");
+            }
+            document.write(animals[i] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+    </script>
+</body>
+</html>
