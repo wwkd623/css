@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        let book = ["소년이 온다", "13,600원", "한강", "2024년 12월 12일", "216페이지"]
+        document.write("책제목: " + book[book.indexOf("소년이 온다")] + "<br>");
+        document.write("가격: " + book[book.indexOf("13,600원")] + "<br>");
+        document.write("저자: " + book[2] + "<br>");
+        document.write("출간일: " + book[3] + "<br>");
+        document.write("페이지수: " + book[4] + "<br>");
+
+        document.write("<hr>");
+
+        book = ["책제목: 소년이 온다", "가격: 13,600원", "저자: 한강", "출간일: 2024년 12월 12일", "페이지수: 216페이지"]
+        for(let i=0;i<=4;i++){
+            document.write(book[i] + "<br>");
+        };
+    </script>
+</body>
+</html>

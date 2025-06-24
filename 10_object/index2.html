@@ -9,29 +9,36 @@
     <script>
         let schdule = {
             mon: {
-                class1: "1교시: html",
-                class2: "2교시: css"
+                class1: "html",
+                class2: "css"
             },
             tus: {
-                class1: "1교시: javascript",
-                class2: "2교시: jquery"
+                class1: "javascript",
+                class2: "jquery"
             },
-            wed: {
-                class1: "1교시: 작품집",
-                class2: "2교시: 포트폴리오"
+            wedns: {
+                class1: "작품집",
+                class2: "포트폴리오"
             }
         };
         document.write("<h3>월요일</h3>")
-        document.write(schdule.mon.class1 + "<br>");
-        document.write(schdule.mon.class2 + "<br>");
+        document.write("1교시: " + schdule.mon.class1 + "<br>");
+        document.write("2교시: " + schdule.mon.class2 + "<br>");
         document.write("<br>")
         document.write("<h3>화요일</h3>")
-        document.write(schdule.tus.class1 + "<br>");
-        document.write(schdule.tus.class2 + "<br>");
+        document.write("1교시: " + schdule.tus.class1 + "<br>");
+        document.write("2교시: " + schdule.tus.class2 + "<br>");
         document.write("<br>")
         document.write("<h3>수요일</h3>")
-        document.write(schdule.wed.class1 + "<br>");
-        document.write(schdule.wed.class2 + "<br>");
+        document.write("1교시: " + schdule.wedns.class1 + "<br>");
+        document.write("2교시: " + schdule.wedns.class2 + "<br>");
+
+        for(let key in schdule){
+            document.write("<h3>" + key + "day</h3>");
+            for(let time in schdule[key]){
+                document.write(time + ": " + schdule[key][time] + "<br>");
+            }
+        };
     </script>
 </body>
 </html>
