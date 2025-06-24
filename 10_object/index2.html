@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 객체데이터</title>
+</head>
+<body>
+    <script>
+        let schdule = {
+            mon: {
+                class1: "1교시: html",
+                class2: "2교시: css"
+            },
+            tus: {
+                class1: "1교시: javascript",
+                class2: "2교시: jquery"
+            },
+            wed: {
+                class1: "1교시: 작품집",
+                class2: "2교시: 포트폴리오"
+            }
+        };
+        document.write("<h3>월요일</h3>")
+        document.write(schdule.mon.class1 + "<br>");
+        document.write(schdule.mon.class2 + "<br>");
+        document.write("<br>")
+        document.write("<h3>화요일</h3>")
+        document.write(schdule.tus.class1 + "<br>");
+        document.write(schdule.tus.class2 + "<br>");
+        document.write("<br>")
+        document.write("<h3>수요일</h3>")
+        document.write(schdule.wed.class1 + "<br>");
+        document.write(schdule.wed.class2 + "<br>");
+    </script>
+</body>
+</html>
