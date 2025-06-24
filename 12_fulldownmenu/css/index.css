@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{font-family: "Noto Sans KR", sans-serif;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{display: block; border: none;}
+button{background: none; border: none; cursor: pointer;}
+/* 풀다운전체메뉴 설정방법 */
+/* 
+    1. header영역을 감싸는 박스가 필요(부모박스)
+    2. 부모박스 가로 100%, 세로높이 설정
+    3. 시작은 부모박스 사이즈 = header사이즈
+*/
+#header_wrap{
+    width: 100%;
+    height: 110px;
+    /* background: gold; */
+    /* border-bottom: 1px solid #c3c3c3; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+header{
+    width: 100%;
+    border-bottom: 1px solid #ff6400;
+}
+header .inner{
+    width: 1140px;
+    height: 110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner h1 a{
+    display: block;
+    width: 186px;
+    height: 47px;
+    background: url("../images/logo_w186.png") no-repeat;
+    text-indent: -99999px;
+}
+header .inner nav>.gnb{
+    display: flex;
+    gap: 85px;
+}
+header .inner nav>.gnb>li{
+    position: relative;
+}
+header .inner nav>.gnb>li>a{
+    display: block;
+    padding: 24px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    position: relative;
+}
+header .inner nav>.gnb>li:hover>a::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #ff6400;
+}
+header .inner nav>.gnb>li>.depth2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+    /* border: 1px solid red; */
+    display: none;
+}
+header .inner nav>.gnb>li>.depth2>li{
+    width: 100px;
+    text-align: center;
+    line-height: 38px;
+}
+header .inner nav>.gnb>li>.depth2>li>a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #867d77;
+    letter-spacing: -1px;
+}
+header .inner nav>.gnb>li>.depth2>li:hover>a{
+    color: #000;
+}
