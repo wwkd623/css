@@ -7,13 +7,14 @@
 </head>
 <body>
     <script>
+        let amount = 3650000;
         function interestCalculator(amount,term,rate){
             let result = amount * term * rate / 100;
-            document.write(`맡긴 금액은 ${amount}원 입니다<br>`)
-            document.write(`이자는 ${result}원 입니다<br>`)
-            return Number(amount)+Number(result)
+            return result;
         }
-        document.write(`최종 받을 금액은 ${interestCalculator(3650000,1,4)}원 입니다.`) 
+        document.write(`맡긴 금액은 ${amount}원 입니다<br>`)
+        document.write(`이자는 ${interestCalculator(3650000,1,4)}원 입니다.<br>`) 
+        document.write(`최종 받을 금액은 ${amount + interestCalculator(3650000,1,4)}원 입니다.`) 
     </script>
 </body>
 </html>
