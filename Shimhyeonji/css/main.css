@@ -188,6 +188,10 @@ main{
     justify-content: space-between;
     line-height: 30px;
 }
+.contents .notice ul li:hover a{
+    font-weight: 700;
+    color: #1d4f38;
+}
 .contents .notice ul li span{
     font-size: 12px;
 }
