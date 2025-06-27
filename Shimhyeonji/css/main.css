@@ -1,0 +1,350 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: 'Pretendard-Regular', sans-serif;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+}
+/* 초기화 */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: #333;}
+button{background: none; border: none; cursor: pointer;}
+img{display: block; border: none;}
+
+/* 팝업 백그라운드 */
+.cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    display: none;
+}
+/* 전체 wrap */
+.wrap{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+/* 팝업 */
+.popup{
+    width: 400px;
+    height: 360px;
+    padding: 50px 30px;
+    background: #fff;
+    border: 10px solid #8caca1;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: none;
+}
+.popup h2{
+    color: #1d4f38;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.popup p{
+    line-height: 24px;
+}
+.popup .btn_close{
+    background: #1d4f38;
+    border-radius: 4px;
+    color: #fff;
+    padding: 2px 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+/* 헤더 */
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #1d4f38;
+    position: relative;
+}
+header h1{
+    width: 200px;
+    height: 100%;
+}
+header h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header nav .gnb{
+    width: 600px;
+    display: flex;
+}
+header nav .gnb>li{
+    position: relative;
+}
+header nav .gnb>li>a{
+    display: block;
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+}
+header nav .gnb>li:hover>a{
+    background: #1d4f38;
+    color: #fff;
+}
+header nav .gnb>li>.depth2{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -120px;
+    z-index: 98;
+    text-align: center;
+    display: none;
+}
+header nav .gnb>li>.depth2>li>a{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+}
+header nav .gnb>li>.depth2>li:hover>a{
+    font-weight: 700;
+    position: relative;
+}
+header nav .gnb>li>.depth2>li:hover>a::after{
+    content: "";
+    width: 78px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4px;
+    z-index: 97;
+}
+
+header .gnbbg{
+    width: 100%;
+    height: 140px;
+    background: #1d4f38;
+    opacity: 0.9;
+    position: absolute;
+    left: 0;
+    bottom: -140px;
+    z-index: 96;
+    display: none;
+}
+
+/* 메인 */
+main{
+    width: 100%;
+    height: 300px;
+}
+
+/* 컨텐츠 */
+.contents{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.contents>div{
+    width: 400px;
+    height: 100%;
+    padding: 20px 10px;
+}
+.contents>div>h2{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    border-bottom: 1px solid #8caca1;
+    margin-bottom: 10px;
+}
+/* 컨텐츠-공지사항 */
+.contents .notice ul{
+    width: 100%;
+    height: 120px;
+}
+.contents .notice ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.contents .notice ul li span{
+    font-size: 12px;
+}
+/* 컨텐츠-갤러리 */
+.contents .gallery ul{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contents .gallery ul li:hover a img{
+    opacity: 0.7;
+}
+/* 컨텐츠-배너 */
+.contents .banner{
+    position: relative;
+    padding: 20px 0 20px 10px;
+}
+.contents .banner .imgbox{
+    width: 100%;
+    height: 100%;
+    background: url("../images/banner.png") no-repeat;
+    opacity: 0.3;
+}
+.contents .banner .txt{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contents .banner .txt h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contents .banner .txt .btn_bn{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    background: #1d4f38;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+.contents .banner .txt .btn_bn:hover{
+    background: #fff;
+    border: 1px solid #1d4f38;
+    color: #1d4f38;
+    font-weight: 700;
+}
+
+/* 푸터 */
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid #8caca1;
+}
+footer h1{
+    width: 200px;
+}
+/* 푸터-카피라이트 및 메뉴 */
+footer .copy{
+    width: 800px;
+}
+footer .copy .ft_nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+footer .copy .ft_nav li{
+    position: relative;
+}
+footer .copy .ft_nav li::after{
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #333;
+    opacity: 0.6;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .copy .ft_nav li:last-child::after{
+    display: none;
+}
+footer .copy p{
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+footer .copy .ft_txt{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+footer .copy .ft_txt h3{
+    font-size: 12px;
+}
+footer .copy .ft_txt ul{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+}
+/* 푸터-패밀리사이트 */
+footer .family{
+    width: 200px;
+    position: relative;
+}
+footer .family .familysite{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #8caca1;
+    text-align: left;
+    text-indent: 20px;
+    position: relative;
+}
+footer .family .familysite::after{
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1d4f38;
+    font-size: 20px;
+    font-weight: 600;
+}
+footer .family ul{
+    width: 100%;
+    border: 1px solid #8caca1;
+    position: absolute;
+    left: 0;
+    top: -109px;
+    display: none;
+}
+footer .family ul li a{
+    display: block;
+    width: 100%;
+    line-height: 36px;
+    text-align: left;
+    text-indent: 20px;
+    background: #fff;
+}
+footer .family ul li:hover a{
+    background: #8caca1;
+}
