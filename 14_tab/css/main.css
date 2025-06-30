@@ -79,9 +79,6 @@ a{text-decoration: none;}
 .section .inner .right .wrap .menu li{
     position: relative;
 }
-.section .inner .right .wrap .menu li:first-child a{
-    color: #222;
-}
 .section .inner .right .wrap .menu li::after{
     content: "";
     width: 1px;
@@ -98,6 +95,10 @@ a{text-decoration: none;}
     font-size: 20px;
     font-weight: 700;
     color: #888;
+}
+.section .inner .right .wrap .menu li.on a{
+    color: #222;
+    font-weight: 900;
 }
 .section .inner .right .wrap .more{
     display: block;
