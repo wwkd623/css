@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체선택5</title>
+</head>
+<body>
+    <ul>
+        <li>빨</li>
+        <li>주</li>
+        <li>노</li>
+        <li>초</li>
+        <li>파</li>
+        <li>남</li>
+        <li>보</li>
+    </ul>
+    <script>
+        let rainbow = document.querySelectorAll("ul li");
+        console.log(rainbow);
+
+        rainbow[0].style.color = "yellow";
+        rainbow[0].style.fontSize = "48px";
+
+        // 반복문사용
+        for(let i=0; i<rainbow.length; i++){
+            rainbow[i].style.color = "red";
+            rainbow[i].style.fontSize = "48px";
+        }
+
+        for(let i=0; i<rainbow.length; i++){
+            if(i%2==0){
+                rainbow[i].style.background = "blue";
+            }else{
+                rainbow[i].style.background = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>

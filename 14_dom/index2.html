@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체선택2</title>
+</head>
+<body>
+    <h1>큰제목1</h1>
+    <h1>큰제목2</h1>
+    <h1>큰제목3</h1>
+
+    <script>
+        let tit = document.getElementsByTagName("h1");
+        console.log(tit);
+
+        tit[0].style.color = "red";
+        tit[1].style.color = "green";
+        tit[2].style.color = "blue";
+    </script>
+</body>
+</html>

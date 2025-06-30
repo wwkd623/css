@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체선택</title>
+</head>
+<body>
+    <!-- 
+        DOM객체 웹페이지에 있는 모든 요소(html태그, 텍스트, 속성)
+        자바스크립트로 다루기 쉽게 접근하기 위해 사용
+    -->
+    <h1 id="tit1">큰제목1</h1>
+    <h1 id="tit2">큰제목2</h1>
+    <h1 id="tit3">큰제목3</h1>
+    <h1 id="tit4">큰제목4</h1>
+    <p>여기는 문단입니다</p>
+
+    <script>
+        let tit1 = document.getElementById("tit1");
+        console.log(tit1);
+        // 제이쿼리 문법
+        // $(function(){
+        //     $("선택자").css({})
+        // })
+
+        // 자바스크립트 문법
+        // 선택자.style.css명령 = "css명령값"
+        tit1.style.color = "red";
+
+        // DOM객체선택
+        let tit2 = document.getElementById("tit2");
+        console.log(tit2);
+        tit2.style.border = "10px solid red";
+
+        let tit3 = document.getElementById("tit3");
+        console.log(tit3);
+        tit3.style.color = "green";
+        tit3.style.background = "yellow";
+        // 자바스크립트에서는 -를 사용 불가하기 때문에 두번째 단어 첫글자를 반드시 대문자로 입력해서 구분.
+        tit3.style.fontSize = "100px";
+
+        let tit4 = document.getElementById("tit4");
+        console.log(tit4);
+        tit4.style.fontSize = "64px";
+        tit4.style.color = "blue";
+        tit4.style.background = "white";
+
+        // 태그선택자는 배열로 저장이 되기 때문에 배열 표기법으로 표기해야한다.
+        let ppp = document.getElementsByTagName("p");
+        console.log(ppp);
+        ppp[0].style.color = "purple";
+        ppp[0].style.fontSize = "36px";
+
+        // h1 태그선택자로 DOM객체 선택하기
+        let tit = document.getElementsByTagName("h1");
+        console.log(tit);
+        tit[0].style.background = "black";
+        tit[0].style.color = "#fff";
+    </script>
+</body>
+</html>
