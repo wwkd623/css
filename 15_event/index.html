@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <!-- 
+        자바스크립트 이벤트 > 마우스를 클릭하거나, 호버했을 때 등 마우스와 관련된 사용자의 행동을
+        웹브라우저가 감지해서 사용자가 원하는 동작을 하도록 만드는 것
+        ex) click, dblclick. mousedown, mouseup, mousemove, mouseenter, mouseleave 등
+    -->
+        <div>박스</div>
+        <script>
+            let box = document.querySelector("div");
+            console.log(box);
+
+            box.style.width = "300px";
+            box.style.height = "300px";
+            box.style.border = "3px solid #000";
+            box.style.background = "orange";
+            box.style.fontSize = "36px";
+            box.style.textAlign = "center";
+            box.style.lineHeight = "300px";
+            box.style.cursor = "pointer";
+            box.style.position = "absolute";
+            box.style.left = "50%";
+            box.style.top = "50%";
+            box.style.transform = "translate(-50%, -50%)";
+
+            // 자바스크립트 이벤트 문법 3가지
+            // 1. 이전 버전에서 클릭이벤트 자바스크립트는 선택자 앞에 on이 붙음 
+            box.onclick = function(){
+                // 클릭한 바로 그 개체일 때 this 선택자
+                this.style.background = "red";
+                this.style.border = "10px solid green";
+            }
+            // 2. 최신버전 es6
+            // 선택자.addEventListener("이벤트종류",function(){})
+            box.addEventListener("click", function(){
+                this.style.background = "red";
+                this.style.border = "10px solid green";
+            })
+            box.addEventListener("mouseenter", function(){
+                this.style.background = "red";
+                this.style.border = "10px solid green";
+            })
+            box.addEventListener("mouseleave", function(){
+                this.style.background = "orange";
+                this.style.border = "3px solid #000";
+            })
+        </script>
+</body>
+</html>
