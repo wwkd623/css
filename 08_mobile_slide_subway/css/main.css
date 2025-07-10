@@ -436,12 +436,13 @@ img{border: none; display: block;}
     width: 100%;
     margin-top: 15px;
     display: flex;
-    gap: 4px;
+    justify-content: space-between;
     text-align: center;
+    padding: 0 10px;
 }
 .subcard>ul>li{
     width: 48%;
-    height: 100px;
+    padding: 15px 0;
     border-radius: 24px;
     background: #fff;
 }
@@ -460,4 +461,9 @@ img{border: none; display: block;}
 .subcard>ul>li>a>.imgbox>img{
     display: inline-block;
     width: 60%;
+    margin-bottom: 4px;
+}
+.subcard>ul>li>a>.imgbox>h3{
+    font-size: 14px;
+    color: #292929;
 }
