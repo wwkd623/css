@@ -1,0 +1,132 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/* 영문 폰트 사용할 때 */
+.en{font-family: "Cormorant", serif;}
+
+#section0{
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+#section1{
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+#section2{
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+#section3{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+#section4{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+#section5{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+#section6{
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+}
+#fp-nav ul li a span{
+    background: #fff;
+}
+#fp-nav ul li a.active span{
+    border-radius: 0;
+}
+.title{
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* header영역 */
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+header h1 a{
+    color: #fff;
+}
+header .navi_wrap{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+}
+header .navi_wrap .gnb{
+    transform: translateX(300px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+header.on .navi_wrap .gnb{
+    transform: translateX(0);
+    opacity: 1;
+}
+header .navi_wrap .gnb ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+header .navi_wrap .gnb ul li a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* header안 햄버거버튼 */
+.m_btn{
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.m_btn span{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+.m_btn span:nth-child(1){
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(3){
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+header.on .m_btn span:nth-child(1){
+    transform: rotate(45deg);
+    top: 10px;
+}
+header.on .m_btn span:nth-child(2){
+    transform: translateX(-100%);
+    opacity: 0;
+}
+header.on .m_btn span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 10px;
+}
