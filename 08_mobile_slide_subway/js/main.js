@@ -28,6 +28,7 @@ $(function () {
 
   // 아코디언메뉴
   $(".m_side_wrap .m_gnb>ul>li>a").click(function(){
+    $(this).toggleClass("on")
     $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
   })
 
@@ -40,5 +41,11 @@ $(function () {
   $(".m_close").click(function(){
     $(".cover").fadeOut();
     $(".m_side_wrap").animate({"left": "-100%"},300);
+  })
+
+  // 텝바 아이콘 중에 li를 클릭하면 on class추가
+  $(".tab_ul li").click(function(){
+    $(".tab_ul li").removeClass("on");
+    $(this).addClass("on");
   })
 });

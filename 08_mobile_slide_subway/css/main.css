@@ -189,6 +189,19 @@ img{border: none; display: block;}
     right: 20px;
     top: 50%;
     transform: translateY(-70%) rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+.m_side_wrap .m_gnb>ul>li>a.on::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #009223;
+    border-top: none;
+    border-left: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-30%) rotate(225deg);
 }
 .m_side_wrap .m_gnb>ul>li>a>img{
     width: 26px;
@@ -466,4 +479,94 @@ img{border: none; display: block;}
 .subcard>ul>li>a>.imgbox>h3{
     font-size: 14px;
     color: #292929;
+}
+
+/* 탭바 */
+.tabbar{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 102;
+}
+.tabbar .tab_navi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: url("../images/navi_bg.png") no-repeat;
+    background-size: cover;
+}
+.tabbar .tab_navi ul li a span{
+    font-size: 12px;
+    color: #d3d3d3;
+}
+.tabbar .tab_navi ul li.on a span{
+    color: #009223;
+    font-weight: bold;
+}
+.tabbar .tab_navi ul li.on a svg path{
+    fill: #009223;
+}
+.tabbar .tab_navi .left_icon{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabbar .tab_navi .left_icon li{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+.tabbar .tab_navi .left_icon li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.tabbar .tab_navi .right_icon{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabbar .tab_navi .right_icon li{
+    width: 40%;
+    height: 100%;
+}
+.tabbar .tab_navi .right_icon li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.tabbar .btn_order{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.tabbar .btn_order img{
+    width: 28px;
 }
