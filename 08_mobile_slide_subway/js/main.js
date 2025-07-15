@@ -48,4 +48,53 @@ $(function () {
     $(".tab_ul li").removeClass("on");
     $(this).addClass("on");
   })
+
+  // 팝업창 스크립트
+  $('.popup .close label, #today_close').click(function(){
+    // setcookie함수 호출 후 팝업창은 닫음(숨김)
+    if($('#today_close').is(':checked')){
+      setCookie('subway', 'today', 1);
+      $('.popup').hide();
+    }else{
+      $('.popup').hide();
+    }
+  })
+  // 닫기버튼
+  $('.popup .close .txt_btn').click(function(){
+    $('.popup').hide();
+  })
+
+  // 쿠키정보 확인해서 쿠키 정보내역이 있으면 팝업 숨김, 아니면 재노출 가능
+  if(GetCookie('subway')=='today'){
+    $('.popup').hide();
+  }else{
+    $('.popup').show();
+  }
+
+
+  // GetCookie 쿠키 정보를 가져오는 명령
+			function GetCookie(name){
+				var value=null, search=name+"=";
+				if(document.cookie.length > 0){
+					var offset=document.cookie.indexOf(search);
+					if(offset != -1){
+						offset+=search.length;
+						var end=document.cookie.indexOf(";", offset);
+						if(end == -1) end=document.cookie.length;
+						value=unescape(document.cookie.substring(offset, end));
+					}
+				} return value;
+			}
+			// SetCookie 쿠키 정보를 저장하는 함수
+			function setCookie(name, value, expiredays){
+				var days=10;
+				if(days){
+					var date=new Date(); 
+					date.setTime(date.getTime()+(days*24*60*60*1000));
+					var expires="; expires="+date.toGMTString();
+				}else{
+					var expires=""; 
+				}
+				document.cookie=name+"="+value+expires+"; path=/";
+			}
 });

@@ -18,6 +18,39 @@ img{border: none; display: block;}
     z-index: 10;
     display: none;
 }
+/* 팝업창 */
+.popup{
+    background: #ffc20c;
+    padding: 10px 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 105;
+}
+.popup a img{
+    width: 100%;
+    min-width: 320px;
+}
+.popup .close{
+    height: 30px;
+}
+.popup .close form{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popup .close form #today_close{}
+.popup .close form label{
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
+.popup .close form .txt_btn{
+    font-size: 12px;
+    color: #333;
+}
+
 .m_side_wrap{
     width: calc(100% - 30px);
     height: 100%;
