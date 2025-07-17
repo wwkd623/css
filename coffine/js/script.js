@@ -1,7 +1,6 @@
 $(function(){
     $(".btn_close").click(function(){
         $(".popup").slideUp();
-        $("main").animate({"top": 0})
     })
 })
 $(function(){
