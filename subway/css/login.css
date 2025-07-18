@@ -25,7 +25,6 @@ main form fieldset legend{
 }
 main form fieldset div{
     width: 100%;
-    padding: 0 20px;
 }
 main form fieldset div input{
     width: 100%;
