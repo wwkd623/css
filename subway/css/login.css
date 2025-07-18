@@ -52,11 +52,21 @@ main form fieldset div.loginbtn button{
     color: #fff;
 }
 main form fieldset >input{
-    margin: 20px 4px 20px 20px;
+    margin: 20px 4px 40px 20px;
 
 }
 main form fieldset div.joinbtn button{
     background: #ffc20c;
     border-radius: 12px;
     color: #333;
+}
+main form fieldset>a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+main form fieldset>a:hover{
+    text-decoration: underline;
 }
