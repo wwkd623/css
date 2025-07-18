@@ -34,7 +34,7 @@ $(function () {
   })
 
   // 햄버거버튼 누르면 모바일 더보기 옆에서 슬라이드인 하기
-  $(".header .m_all_btn").click(function(){
+  $(".m_all_btn").click(function(){
     $(".cover").fadeIn();
     $(".m_side_wrap").animate({"left": 0},300);
   })

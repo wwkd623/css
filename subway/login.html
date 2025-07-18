@@ -3,31 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>subway mobile</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/slick.css">
+    <title>로그인/회원가입</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    <!-- 백그라운드커버 -->
     <div class="cover"></div>
-    <!-- 팝업창 -->
-    <div class="popup">
-        <a href="#">
-            <img src="./images/popup.png" alt="팝업창">
-            <div class="close">
-                <form action="">
-                    <div class="formcheck">
-                        <input type="checkbox" id="today_close">
-                        <label for="today_close">오늘 하루 그만보기</label>
-                    </div>
-                    <a href="#" class="txt_btn">X 닫기</a>
-                </form>
-            </div>
-        </a>
-    </div>
-
-
     <!-- 모바일메뉴 -->
     <div class="m_side_wrap">
         <!-- 로그인메뉴 -->
@@ -164,6 +145,7 @@
         </div>
     </div>
 
+
     <!-- 헤더 영역 -->
     <div class="header">
         <button class="m_all_btn">전체메뉴</button>
@@ -174,133 +156,36 @@
            장바구니버튼
         </button>
     </div>
-    <div class="login">
-        <p>
-            안녕하세요,<br>
-            로그인하시고 다양한 혜택을 즐겨보세요.
-        </p>
-        <a href="login.html" class="go">
-            로그인하기>
-        </a>
-    </div>
-    <div class="main">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="./images/MO-main_visual01(640x495)_20250428012436321.jpg" alt="메인슬라이드01">
+
+    <!-- 로그인페이지 메인 영역 -->
+    <main>
+        <h2>로그인 후 서비스를<br> 다양하게 이용해보세요!</h2>
+        <form action="">
+            <fieldset>
+                <legend>로그인폼</legend>
+                <div class="id">
+                    <input type="text" placeholder="아이디를 입력하세요.">
                 </div>
-                <div class="swiper-slide">
-                    <img src="./images/MO-main_visual02(640x495)_20250428012436321.jpg" alt="메인슬라이드02">
+                <div class="password">
+                    <input type="password" placeholder="비밀번호를 입력하세요.">
                 </div>
-                <div class="swiper-slide">
-                    <img src="./images/MO-main_visual03(640x495)_20250428012436321.jpg" alt="메인슬라이드03">
+                <div class="loginbtn">
+                    <button>로그인</button>
                 </div>
-                <div class="swiper-slide">
-                    <img src="./images/MO-main_visual04(640x495)_20250428012436321.jpg" alt="메인슬라이드04">
+                <input type="checkbox">아이디 기억하기
+                <input type="checkbox">자동 로그인
+                <div class="joinbtn">
+                    <button>회원가입</button>
                 </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-        
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
-        </div>
-    </div>
-    <div class="order">
-        <ul class="orderlist">
-            <li>
-                <a href="#">
-                    매장 선주문<br>
-                    <span>FAST-SUB</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    배달주문<br>
-                    <span>HOME-SUB</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- 지도박스 -->
-    <!-- 배너슬라이드박스(추천메뉴) -->
-    <div class="banner">
-        <div class="tit">
-            <h2>추천 메뉴</h2>
-            <a href="#">
-                <img src="./images/right_arrow.png" alt="더보기">
-            </a>
-        </div>
-        <ul class="menu_slide">
-            <li>
-                <a href="#">
-                    <div class="imgbox">
-                        <img src="./images/Steak-&-Cheese_20211231095455613.png" alt="스테이크앤치즈">
-                    </div>
-                    <div class="info">
-                        <h3>스테이크&치즈</h3>
-                        <p>STEAK & CHEESE</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="imgbox">
-                        <img src="./images/Italian_B.M.T_20211231094910899.png" alt="이탈리안BMT">
-                    </div>
-                    <div class="info">
-                        <h3>이탈리안 비엠티</h3>
-                        <p>ITALIAN B.M.T.<sup>TM</sup></p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="imgbox">
-                        <img src="./images/Roasted-Chicken_20211231095032718.png" alt="로스트치킨">
-                    </div>
-                    <div class="info">
-                        <h3>로스트 치킨</h3>
-                        <p>ROASTED CHICKEN</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- 써브카드박스 -->
-    <div class="subcard">
-        <h2>써브카드</h2>
-        <ul>
-            <li>
-                <a href="#">
-                    <div class="imgbox">
-                        <img src="./images/icon_charge.png" alt="충전">
-                        <h3>충전하기</h3>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="imgbox">
-                        <img src="./images/icon_gift.png" alt="선물">
-                        <h3>선물하기</h3>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
+            </fieldset>
+        </form>
+    </main>
+
     <!-- tabbar -->
     <div class="tabbar">
         <div class="tab_navi">
             <ul class="left_icon tab_ul">
-                <li class="on">
+                <li>
                     <a href="index.html">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 19H9V13H15V19H18V10L12 5.5L6 10V19ZM4 21V9L12 3L20 9V21H13V15H11V21H4Z" fill="#d3d3d3"/>
@@ -326,7 +211,7 @@
                         <span>매장찾기</span>
                     </a>
                 </li>
-                <li>
+                <li class="on">
                     <a href="login.html">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 12C17.5228 12 22 16.4772 22 22C22 22.5523 21.5523 23 21 23C20.4477 23 20 22.5523 20 22C20 17.5818 16.4182 14 12 14C7.58178 14 4 17.5818 4 22C4 22.5523 3.55228 23 3 23C2.44772 23 2 22.5523 2 22C2 16.4772 6.47722 12 12 12ZM12 1C14.7614 1 17 3.23858 17 6C17 8.76142 14.7614 11 12 11C9.23858 11 7 8.76142 7 6C7 3.23858 9.23858 1 12 1ZM12 3C10.3431 3 9 4.34315 9 6C9 7.65685 10.3431 9 12 9C13.6569 9 15 7.65685 15 6C15 4.34315 13.6569 3 12 3Z" fill="#d3d3d3"/>
@@ -343,8 +228,6 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/slick.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
