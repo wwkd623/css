@@ -486,7 +486,7 @@ img{border: none; display: block;}
     background: #009436;
 }
 .subcard{
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 .subcard>ul{
     width: 100%;
@@ -530,19 +530,19 @@ img{border: none; display: block;}
 /* 탭바 */
 .tabbar{
     width: 100%;
-    height: 65px;
+    height: 80px;
     position: fixed;
     left: 0;
     bottom: 0;
     z-index: 102;
+    background: url("../images/navi_bg.png") no-repeat;
+    background-size: 100% 80px;
 }
 .tabbar .tab_navi{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    background: url("../images/navi_bg.png") no-repeat;
-    background-size: cover;
 }
 .tabbar .tab_navi ul li a span{
     font-size: 12px;
@@ -605,7 +605,7 @@ img{border: none; display: block;}
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10px;
+    bottom: 20px;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
