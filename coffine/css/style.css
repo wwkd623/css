@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 body{
     font-family: "Nanum Gothic", sans-serif;
     font-weight: 400;
@@ -9,6 +9,7 @@ body{
 .popup{
     width: 100%;
     height: 90px;
+    position: relative;
 }
 .popup .inner a{
     width: 100%;
@@ -16,7 +17,6 @@ body{
     display: block;
     background: url("../images/mi98fTZd30jphbrs_20241126.jpg") no-repeat center top;
     background-size: cover;
-    position: relative;
 }
 .popup .inner a .btn_close{
     width: 19px;
@@ -33,11 +33,19 @@ body{
 main{
     width: 100%;
 }
+
+/* 고정된 배너 이미지 */
+main a.bannerimg{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 200;
+}
+
 /* 메인 슬라이드 */
 main .slide{
     width: 100%;
     height: 620px;
-    position: relative;
 }
 main .slide div{
     width: 100%;
@@ -109,4 +117,303 @@ main .slide .slick-dots>li>button{
 }
 main .slide .slick-dots>li.slick-active>button{
     background: url("../images/main_visual_pager_on.png") no-repeat;
+}
+
+/* section1 */
+main #section1{
+    width: 100%;
+    padding-top: 60px;
+}
+main #section1 .inner{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main #section1 .inner .mall,
+main #section1 .inner .find{
+    width: 270px;
+    height: 416px;
+    text-align: center;
+}
+main #section1 .inner .mall h2,
+main #section1 .inner .find h2{
+    font-size: 30px;
+    color: #333;
+}
+main #section1 .inner .mall p,
+main #section1 .inner .find p{
+    font-size: 13px;
+    color: #565656;
+    margin: 10px 0;
+}
+img{display: inline-block;}
+
+/* section2 */
+main #section2{
+    width: 100%;
+    background: #f5f1e8;
+    padding: 50px 0 94px;
+}
+main #section2 .inner{
+    width: 1000px;
+    margin: 0 auto;
+}
+main #section2 .inner h2{
+    font-size: 36px;
+    font-weight: 900;
+    color: #454545;
+    text-align: center;
+    background: url("../images/main_menu_title_line.png") no-repeat 0 center;
+    margin-bottom: 50px;
+}
+main #section2 .inner h2 span{
+    font-weight: 400;
+}
+main #section2 .inner .product_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main #section2 .inner .product_wrap .best ul{
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+main #section2 .inner .product_wrap .best ul li{
+    width: 205px;
+    height: 242px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+main #section2 .inner .product_wrap .best ul li::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+main #section2 .inner .product_wrap .best ul li:hover::after{
+    border: 5px solid #fd8417;
+}
+main #section2 .inner .product_wrap .best ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+main #section2 .inner .product_wrap .best ul li a img.product_img{
+    width: 173px;
+    margin-bottom: 10px;
+}
+main #section2 .inner .product_wrap .best ul li a img.new_icon{
+    width: 34px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+main #section2 .inner .product_wrap .best ul li a h3{
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: bold;
+}
+main #section2 .inner .product_wrap .best ul li a h4{
+    font-size: 14px;
+    color: #969696;
+    font-weight: bold;
+}
+main #section3{
+    width: 100%;
+    background: #413342;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+main #section3 .inner{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+main #section3 .inner .txt h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+main #section3 .inner .txt h2 span{
+    font-weight: 700;
+}
+main #section3 .inner .txt p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 15px 0;
+}
+main #section3 .inner .txt a.more{
+    font-size: 12px;
+    color: #fff;
+    padding: 8px 10px;
+    background: #1b1b1b;
+    text-transform: uppercase;
+}
+main #section3 .inner img.banner{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+}
+main #section4{
+    width: 100%;
+    padding: 80px 0;
+}
+main #section4 .inner{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+main #section4 .inner .banner_slide{
+    width: 250px;
+    height: 410px;
+    position: relative;
+}
+main #section4 .inner .banner_slide ul.slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    display: flex;
+    gap: 5px;
+}
+main #section4 .inner .banner_slide ul.slick-dots li{
+    width: 15px;
+    height: 15px;
+    background: #8f8e91;
+    border-radius: 100%;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+main #section4 .inner .banner_slide ul.slick-dots li.slick-active{
+    background: #9465b5;
+}
+main #section4 .inner .box_wrap{
+    width: 271px;
+    height: 410px;
+}
+main #section4 .inner .box_wrap .social,
+main #section4 .inner .box_wrap .recruit{
+    width: 100%;
+    height: 205px;
+    background: #6c5648 url("../images/btn_main_article_type1.png") no-repeat 217px 28px;
+}
+main #section4 .inner .box_wrap .recruit{
+    background: #f7f7f7 url("../images/btn_main_article_type2.png") no-repeat 217px 28px;
+}
+main #section4 .inner .box_wrap .social a,
+main #section4 .inner .box_wrap .recruit a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 40px 30px;
+}
+main #section4 .inner .box_wrap .social a h2,
+main #section4 .inner .box_wrap .recruit a h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+main #section4 .inner .box_wrap .recruit a h2{
+    color: #555;
+}
+main #section4 .inner .box_wrap .social a p,
+main #section4 .inner .box_wrap .recruit a p{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: -0.8px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+main #section4 .inner .box_wrap .recruit a p{
+    color: #666;
+}
+main #section4 .inner .bannerbox{
+    width: 479px;
+    height: 410px;
+    position: relative;
+}
+main #section4 .inner .bannerbox .franchise{
+    width: 250px;
+    height: 205px;
+    background: #424242 url("../images/btn_main_article_type2.png") no-repeat 195px 28px;
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+}
+main #section4 .inner .bannerbox .franchise a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 40px 30px;
+}
+main #section4 .inner .bannerbox .franchise a h2{
+    font-size: 25px;
+    color: #fff;
+}
+main #section4 .inner .bannerbox .franchise a p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    text-align: justify;
+    letter-spacing: -1px;
+    line-height: 23px;
+}
+main #section5{
+    width: 100%;
+    padding: 60px;
+    background: #f1f1f1;
+}
+main #section5 .inner{
+    width: 1000px;
+    margin: 0 auto;
+}
+main #section5 .inner ul.tab{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    border-bottom: 2px solid #555;
+}
+main #section5 .inner ul.tab li{
+    width: 240px;
+    height: 100%;
+}
+main #section5 .inner ul.tab li:nth-child(2),
+main #section5 .inner ul.tab li:nth-child(3),
+main #section5 .inner ul.tab li:nth-child(4){
+    margin-left: -2px;
+}
+main #section5 .inner ul.tab li a{
+    display: block;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 50px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    border: 2px solid #e1e1e1;
+    border-bottom: none;
+}
+
+/* 탭 on클래스 */
+main #section5 .inner ul.tab li.on a{
+    border: 2px solid #555;
+    border-bottom: none;
+    position: relative;
+    height: 54px;
+    background: #f1f1f1;
 }
