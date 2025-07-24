@@ -605,14 +605,14 @@ img{border: none; display: block;}
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 20px;
+    bottom: 12px;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
-    border: 12px solid #f6f6f6;
+    border: 16px solid #f6f6f6;
     box-sizing: content-box;
 }
 .tabbar .btn_order img{
